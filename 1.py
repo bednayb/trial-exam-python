@@ -6,11 +6,16 @@
 
 ### change print to return ###
 
+
 list_for_function =[2,3,4,5,10]
 
 def list_doubled(list_simple):
-    for i in range(len(list_simple)):
-        list_simple[i] *= 2
-    print(list_simple)
+    if isinstance(list_simple, list):
+        for i in range(len(list_simple)):
+            list_simple[i] *= 2
+        return list_simple
+    else:
+        raise TypeError("it's not a list")
 
 list_doubled(list_for_function)
+list_doubled(5)
