@@ -26,10 +26,10 @@ The application is accepted if:
 
 ### Explain the algorithm used in exercise 2. Use a flowchart, structogram or pseudo code. [2p]
 #### Your answer:
-
+ Check the exercise_03.flowchart.png file
 ### How can you get a random number in python? [2p]
 #### Your answer:
 First of all you need to import the random module to your file. after that you can use the random functions, like this random.random(). the first random is because of you call call something from the random module, and the second one is because you call the random function. it will give you a number between 0 and 1. If you use the random.randint(5,15), it will give you a number between 5 and 15
 ### What does M stand for in MVC? [2p]
 #### Your answer:
-The MVC is a software design pattern. it has 3 big part M-model, V-view, C-controller. In the model zou can manage the data, give the logic of the games the rules, etc.
+The MVC is a software design pattern. it has 3 big part M-model, V-view, C-controller. In the model you can manage the data, give the logic of the games the rules, etc.
