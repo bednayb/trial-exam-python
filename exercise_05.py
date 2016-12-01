@@ -11,11 +11,15 @@ pirates = [
 # more than 15 gold
 
 def pirates_check(check_dictonary):
+    ### MAKE A NEW EMPTY LIST ###
     rich_pirates_with_wood_leg = []
+    ### CHECK EVERY ELEMENT ###
     for i in range(len(check_dictonary)):
         if check_dictonary[i]["has_wooden_leg"] == True and check_dictonary[i]["gold"] > 15:
+            ### PUT TO THE NEW EMPTY LIST ###
             rich_pirates_with_wood_leg.append(check_dictonary[i]["Name"])
 
     return rich_pirates_with_wood_leg
 
+### CALL THE FUNCTION ###
 pirates_check(pirates)

@@ -4,17 +4,18 @@
 # It should have a method called `getVolume` that returns the cuboid's volume
 
 class Cuboid():
-
-    def __init__(self,a,b,c):
-        self.a = a
-        self.b = b
-        self.c = c
-
+    ### MAKE THE THREE PARAMETERS FOR THE SIDE LENGTHS ###
+    def __init__(self,a_side,b_side,c_side):
+        self.a_side = a_side
+        self.b_side = b_side
+        self.c_side = c_side
+    ### SURFACE ###
     def getSurface(self):
-        return self.a*self.b*2 + self.a*self.c*2 + self.b*self.c*2
-
+        return self.a_side*self.b_side*2 + self.a_side*self.c_side*2 + self.b_side*self.c_side*2
+    ### VOLUME ###
     def getVolume(self):
-        return self.a*self.b*self.c
+        return self.a_side*self.b_side*self.c_side
+
 
 x =Cuboid(4,5,6)
 x.getSurface()
